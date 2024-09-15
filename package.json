@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/aidpproject/aidpcoin-key#readme",
   "dependencies": {
-    "@hyperbitjs/chains": "^1.2.0",
+    "@aidpproject/chains": "^1.6.1",
     "bip39": "^3.0.4",
     "coinkey": "^3.0.0",
     "hdkey": "^2.0.1"
