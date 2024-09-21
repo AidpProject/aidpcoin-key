@@ -10,7 +10,7 @@ test("Validate address on main-net", () => {
   const mnemonic =
     "orphan resemble brain dwarf bus fancy horn among cricket logic duty crater";
   const address = AidpcoinKey.getAddressPair(network, mnemonic, 0, 1);
-  expect(address.external.address).toBe("RKbP9SMo2KTKWsiTrEDhTWPuaTwfuPiN8G");
+  expect(address.external.address).toBe("Xky4oFyGb2JpQgRC2vcPkepypkzgHDwrCK");
 });
 
 test("Validate address on test-net", () => {
@@ -18,7 +18,7 @@ test("Validate address on test-net", () => {
   const mnemonic =
     "orphan resemble brain dwarf bus fancy horn among cricket logic duty crater";
   const address = AidpcoinKey.getAddressPair(network, mnemonic, 0, 1);
-  expect(address.external.address).toBe("n1nUspcdAaDAMfx2ksZJ5cDa7UKVEGstrX");
+  expect(address.external.address).toBe("9Q2bGwVQZA3RwEG9XhFHxCSyqZseUoPstm");
 });
 
 test("Validate Wallet Import Format (WIF) main-net ", () => {
@@ -27,9 +27,9 @@ test("Validate Wallet Import Format (WIF) main-net ", () => {
     "orphan resemble brain dwarf bus fancy horn among cricket logic duty crater";
   const address = AidpcoinKey.getAddressPair(network, mnemonic, 0, 1);
 
-  expect(address.internal.address).toBe("RLnvUoy29k3QiQgtR6PL416rSNfHTuwhyU");
+  expect(address.internal.address).toBe("Xmu7ppu5yhnkY4fhBqghk4nhJWLZrN5hFv");
   expect(address.external.WIF).toBe(
-    "KyWuYcev1hJ7YJZTjWx8coXNRm4jRbMEhgVVVC8vDcTaKRCMASUE"
+    "L5bGA8GKgSFCUsKYyA1SQ2W9njuH84v25QFkZv3yEyAqjwLdemH1"
   );
 });
 
@@ -49,7 +49,7 @@ test("Validate get public address from Wallet Import Format (WIF) main-net ", ()
   const WIF = "KyWuYcev1hJ7YJZTjWx8coXNRm4jRbMEhgVVVC8vDcTaKRCMASUE";
   const addressObject = AidpcoinKey.getAddressByWIF(network, WIF);
 
-  expect(addressObject.address).toBe("RKbP9SMo2KTKWsiTrEDhTWPuaTwfuPiN8G");
+  expect(addressObject.address).toBe("Xm12uB8QPCsLbowrEwYoDWkVeY4mHCFBcU");
 });
 
 test("Valid bytes to mnemonic", () => {
